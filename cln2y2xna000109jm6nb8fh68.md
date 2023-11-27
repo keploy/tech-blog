@@ -5,6 +5,7 @@ seoDescription: "This blog explores an approach known as the Inverted Testing Py
 datePublished: Thu Sep 28 2023 09:00:15 GMT+0000 (Coordinated Universal Time)
 cuid: cln2y2xna000109jm6nb8fh68
 slug: integration-vs-e2e-testing-what-worked-for-me-as-a-charm
+canonical: https://keploy.io/blog/technology/integration-vs-e2e-testing-what-worked-for-me-as-a-charm
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1695891706731/31c2a5e1-bd26-4b97-a5ad-8333e3fd0b66.png
 tags: e2e, api-testing, automation-testing, integration-test, testgpt
 
