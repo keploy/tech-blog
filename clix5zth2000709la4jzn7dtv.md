@@ -3,6 +3,7 @@ title: "Go Mocks and Stubs Made Easy"
 datePublished: Thu Jun 15 2023 13:16:21 GMT+0000 (Coordinated Universal Time)
 cuid: clix5zth2000709la4jzn7dtv
 slug: go-mocks-and-stubs-made-easy
+canonical: https://keploy.io/blog/technology/go-mocks-and-stubs-made-easy
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/fd9mIBluHkA/upload/efdc31650d0ba0f4ce5da5965e2dbd05.jpeg
 tags: tdd, unit-testing, stub, gomock, test-generator
 
