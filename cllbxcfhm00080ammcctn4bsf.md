@@ -4,6 +4,7 @@ seoTitle: "Automated E2E tests using Property Based Testing  | Part 2"
 datePublished: Tue Aug 15 2023 06:30:10 GMT+0000 (Coordinated Universal Time)
 cuid: cllbxcfhm00080ammcctn4bsf
 slug: automated-e2e-tests-using-property-based-testing-part-ii
+canonical: https://keploy.io/blog/technology/automated-e2e-tests-using-property-based-testing-part-ii
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689231239262/93d32150-b85c-4255-bc1d-45ed45c143fc.webp
 tags: apis, testing, test-automation, openai, chatgpt
 
