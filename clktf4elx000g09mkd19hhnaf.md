@@ -4,6 +4,7 @@ seoTitle: "Automated E2E tests using Property Based Testing"
 datePublished: Wed Aug 02 2023 07:40:11 GMT+0000 (Coordinated Universal Time)
 cuid: clktf4elx000g09mkd19hhnaf
 slug: automated-end-to-end-tests-using-property-based-testing-part-i
+canonical: https://keploy.io/blog/technology/automated-end-to-end-tests-using-property-based-testing-part-i
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1689231142933/0e808a24-763a-49d4-b2da-06404cc7749e.jpeg
 tags: tdd, apis, testing, test-automation, keploy
 
