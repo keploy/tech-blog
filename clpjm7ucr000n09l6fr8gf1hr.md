@@ -3,6 +3,7 @@ title: "Capture gRPC Traffic going out from a Server"
 datePublished: Wed Nov 29 2023 10:19:39 GMT+0000 (Coordinated Universal Time)
 cuid: clpjm7ucr000n09l6fr8gf1hr
 slug: capture-grpc-traffic-going-out-from-a-server
+canonical: https://keploy.io/blog/technology/capture-grpc-traffic-going-out-from-a-server
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1701251589983/0ec04be9-d7f6-47ab-b730-3f84dc266833.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1701252799714/d24571fa-9919-4059-a780-ef9e403d85fc.png
 tags: golang, testing, grpc
