@@ -5,6 +5,7 @@ seoDescription: "By leveraging the network interactions between the MongoDB clie
 datePublished: Mon Dec 04 2023 07:00:10 GMT+0000 (Coordinated Universal Time)
 cuid: clpqkakln000a09jzdy0tdmku
 slug: mongodb-in-mock-mode-acting-the-server-part
+canonical: https://keploy.io/blog/technology/mongodb-in-mock-mode-acting-the-server-part
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1699120189805/b6e50012-6109-434a-95cc-1e3e142b9b87.png
 tags: go, http, mongodb, proxy-server
 
