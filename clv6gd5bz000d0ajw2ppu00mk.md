@@ -3,6 +3,7 @@ title: "Getting code coverage data for each request coming to a python web serve
 datePublished: Fri Apr 19 2024 09:13:02 GMT+0000 (Coordinated Universal Time)
 cuid: clv6gd5bz000d0ajw2ppu00mk
 slug: getting-code-coverage-data-for-each-request-coming-to-a-python-web-server
+canonical: https://keploy.io/blog/technology/getting-code-coverage-data-for-each-request-coming-to-a-python-web-server
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1713517637811/7284f08d-9592-4019-b29f-5ddad41e6e22.png
 tags: testing, coverage
 
