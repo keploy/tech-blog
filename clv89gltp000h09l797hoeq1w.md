@@ -5,6 +5,7 @@ seoDescription: "While working on an application that required executing a comma
 datePublished: Fri Apr 19 2024 18:30:00 GMT+0000 (Coordinated Universal Time)
 cuid: clv89gltp000h09l797hoeq1w
 slug: managing-go-processes
+canonical: https://keploy.io/blog/technology/managing-go-processes
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1712074478334/96116a5c-7352-40f9-a3da-ecb99349f2a9.jpeg
 tags: linux, go, command-line, shell, process, context
 
