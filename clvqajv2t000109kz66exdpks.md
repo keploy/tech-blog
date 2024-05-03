@@ -190,7 +190,7 @@ Thank you and Happy colouring 🎨 !
 
 Yes, coloring log messages improves readability and helps prioritize critical information. Popular libraries like Zap and zerolog offer built-in support or allow customization through custom encoders.
 
-### **What are the benefits of coloring contextual logs?**
+### **Should i add coloring to contextual logs?**
 
 Coloring contextual logs (key-value pairs) makes debugging faster. You can easily spot relevant details and differentiate between values, leading to quicker problem identification.
 
