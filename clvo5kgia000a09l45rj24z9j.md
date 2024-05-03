@@ -5,6 +5,7 @@ seoDescription: "Enhance database security with SCRAM authentication. Learn how 
 datePublished: Wed May 01 2024 18:30:39 GMT+0000 (Coordinated Universal Time)
 cuid: clvo5kgia000a09l45rj24z9j
 slug: scram-authentication-overcoming-mock-testing-challenges
+canonical: https://keploy.io/blog/technology/scram-authentication-overcoming-mock-testing-challenges
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1706170545029/340c803d-a4c3-4ca4-a639-88c31d938671.png
 tags: postgresql, authentication, mongodb, databases, mocking, keploy, scram-authentication
 
