@@ -5,6 +5,7 @@ seoDescription: "Logging is an integral part of software development, providing 
 datePublished: Fri May 03 2024 06:25:41 GMT+0000 (Coordinated Universal Time)
 cuid: clvqajv2t000109kz66exdpks
 slug: adding-colour-to-the-log-output-of-logging-libraries-in-go
+canonical: https://keploy.io/blog/technology/adding-colour-to-the-log-output-of-logging-libraries-in-go
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1714717473837/eee233fe-1405-4020-80f7-11e6679a4b4b.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1714717496392/e152b352-36a4-40b2-a0e5-06c7c23cbf80.png
 tags: logging, zap, zerolog, logging-library, logrus
