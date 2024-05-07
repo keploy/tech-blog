@@ -5,6 +5,7 @@ seoDescription: "Discover the untapped potential of TC-BPF in Docker networking.
 datePublished: Thu May 02 2024 18:30:18 GMT+0000 (Coordinated Universal Time)
 cuid: clvpkzvcz000e0ajuhjnl2v7x
 slug: using-tc-bpf-program-to-redirect-dns-traffic-in-docker-containers
+canonical: https://keploy.io/blog/technology/using-tc-bpf-program-to-redirect-dns-traffic-in-docker-containers
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1714477241950/e40217d1-2fcb-41ec-b958-0e4fc3672823.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1714477264538/7db73b5e-d040-4e5d-a05b-0b11c64c41d4.png
 tags: dns, docker, networking, containers, keploy, docker-network, ebpf
