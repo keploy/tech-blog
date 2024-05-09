@@ -1,8 +1,9 @@
 ---
-title: "Decoding Network Traffic: Telemetry with Network Activity"
+title: "Decoding Network Traffic: The Vital Role of Telemetry in Understanding Network Activity"
 datePublished: Mon May 06 2024 18:30:18 GMT+0000 (Coordinated Universal Time)
 cuid: clvvar9z400080amj15c9ckqt
-slug: decoding-network-traffic-telemetry-with-network-activity
+slug: decoding-network-traffic-the-vital-role-of-telemetry-in-understanding-network-activity
+canonical: https://keploy.io/blog/technology/decoding-network-traffic-telemetry-with-network-activity
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1706138943893/7acb8b91-98b3-4539-8722-0780cf6959ad.webp
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1706138961562/4c258e45-929b-423d-8b5f-1cc57a782070.jpeg
 tags: networking, keploy, telemetry, ebpf
