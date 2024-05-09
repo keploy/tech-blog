@@ -5,6 +5,7 @@ seoDescription: "Learn to create a parallax effect with GSAP library with no pri
 datePublished: Sun May 05 2024 18:30:32 GMT+0000 (Coordinated Universal Time)
 cuid: clvtvbq4c000209l77f0jhhd5
 slug: create-stunning-parallax-animations-on-your-website
+canonical: https://keploy.io/blog/technology/create-stunning-parallax-animations-on-your-website
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1711799582254/e15be176-3d4a-466c-9469-f1a98c9c1647.webp
 tags: animation, javascript-animation, gsap, beginnersguide, parallax-effect, web-animation
 
