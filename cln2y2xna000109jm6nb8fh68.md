@@ -7,7 +7,7 @@ cuid: cln2y2xna000109jm6nb8fh68
 slug: integration-vs-e2e-testing-what-worked-for-me-as-a-charm
 canonical: https://keploy.io/blog/technology/integration-vs-e2e-testing-what-worked-for-me-as-a-charm
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1695891706731/31c2a5e1-bd26-4b97-a5ad-8333e3fd0b66.png
-tags: e2e, api-testing, automation-testing, integration-test, testgpt
+tags: apis, testing, integration-testing, e2e, api-testing, automation-testing, ci-cd, integration-test, keploy, end-to-end-testing, testgpt
 
 ---
 
@@ -45,7 +45,7 @@ In the current scenario, where backend testing is concerned, integration testing
 
 Additionally, integration testing can help identify issues early in the development cycle, which can save time and money in the long run. It also helps to ensure that all the components of the backend system work as intended and are compatible with each other.
 
-In my opinion, we should focus on writing more controller-level tests instead of internals like authentication because they are not exposed to the consumer of the app or library. As we are interested in behaviour that *can happen* right? It can be considered that if the product primarily focuses on the end-user experience and can't compensate on the response the user will get. Then E2E testing should be given more priority cause at last *we have to run the application not just tests to meet the requirements* *of the user*
+In my opinion, we should focus on writing more controller-level tests instead of internals like authentication because they are not exposed to the consumer of the app or library. As we are interested in behaviour that *can happen* right? It can be considered that if the product primarily focuses on the end-user experience and can't compensate on the response the user will get. Then E2E testing should be given more priority cause at last *we have to run the application not just tests to meet the requirementsof the user*
 
 You might have heard of two famous testing models Pyramid model and the Trophy model. [The testing pyramid](https://subscription.packtpub.com/book/web-development/9781838642655/2/ch02lvl1sec08/understanding-the-testing-pyramid-and-trophy) suggests that you should write more unit tests than integration tests, and more integration tests than UI tests. This is because unit tests are the most efficient type of test, and they can catch a lot of bugs. Integration tests and e2e tests are less efficient, but they can catch bugs that unit tests miss.
 
@@ -95,7 +95,7 @@ Writing end-to-end (E2E) tests and integration tests are both important aspects 
 * That being said, the generally accepted view in the software testing industry is that E2E testing tends to be more time-consuming and resource-intensive than integration testing. But it's also considered a more thorough method that checks the system as a whole.
     
 
-### **How you can reduce your testing efforts with** [**Keploy**](http://keploy.io) **??**
+### **How you can reduce your testing efforts with**[**Keploy**](http://keploy.io)**??**
 
 Now we got to know that e2e gives more confidence but writing it is hard, And if we can perform API calls (*which we usually do before pushing code though)* and get some sort of tests bound along with their mock data. This can be run along with your native testing frameworks like Junit, Jest, and Gotest and logs the result which shows the difference between the actual and expected responses. This can be pretty useful stuff for all the teams which want to **deliver fast and are focused on the end responses for the user**.
 
@@ -162,4 +162,26 @@ In conclusion, both E2E and integration testing have their roles and neither can
 
 So when we have tools like keploy why we should not encourage them to perform a thorough e2e testing as we already "*got everything right on as a test*" ?? In my opinion, keploy is a boon to developers and testing teams as they can just simply run their application the same way they expected to and can see the code path covered for a particular test case.
 
-In the next blog, we will discuss and showcase a sample application in which I created test cases and mocks without writing a single line of code with the help of Keploy V2. Check Keploy's GitHub repo here - [https://github.com/keploy/keploy](https://github.com/keploy/keploy) .
+In the next blog, we will discuss and showcase a sample application in which I created test cases and mocks without writing a single line of code with the help of Keploy V2. Check Keploy's GitHub repo here - [https://github.com/keploy/keploy](https://github.com/keploy/keploy) .  
+
+## Frequently Asked Questions
+
+### **What is integration testing, and when should it be performed in the software development lifecycle (SDLC)?**
+
+Integration testing focuses on testing the interaction between different components or modules of a system. It should be performed after unit testing and before system testing in the SDLC to ensure proper integration and communication between components.
+
+### **What is end-to-end (E2E) testing, and why is it important?**
+
+E2E testing involves testing an entire system from start to end, simulating real-world user interactions and workflows. It is important for ensuring that the entire system behaves as expected and meets user requirements, providing confidence in the application's functionality.
+
+### **What are the key differences between integration testing and E2E testing?**
+
+Integration testing focuses on the interaction between components within the application, while E2E testing covers the entire application or significant parts of it from the user's perspective. E2E tests tend to be more complex, time-consuming, and resource-intensive compared to integration tests.
+
+### **How does Keploy simplify the process of E2E testing?**
+
+Keploy automatically captures outcomes from real API calls, generating mock data and test cases without the need for manual intervention. This reduces the effort required to write and maintain E2E tests, enabling developers and testing teams to perform thorough testing with minimal effort.
+
+### **What are the benefits of using Keploy for E2E testing?**
+
+Keploy provides a clear history of tests in a readable YAML format, making collaboration and tracking changes easy. It allows developers to leverage real data mocks, replicating scenarios accurately and identifying potential issues more effectively. By integrating Keploy into CI pipelines, teams can ensure the reliability of their applications with minimal effort.
