@@ -90,7 +90,44 @@ We created a regularly-updating **snapshot of prod dB** and also tried replaying
 
 ### **Developing Keploy**
 
-From these experiences, <mark>Keploy open source</mark> project was born. Idea was to capture API requests and database responses during normal operation and creates test cases that can be replayed in any environment including CI/CD.
+We did explore a combination of open-source tools built to make record-replay testing easier - [vcr](https://github.com/vcr/vcr), and [pact](https://github.com/pact-foundation), and and [wiremock](https://github.com/wiremock/wiremock), and a variety of other tried and true projects. There are all great tools for their intended use case but didn’t work for me, these are the shortfalls we encountered -
+
+1. **VCR**: I explored multiple VCR libraries.
+    
+    1. Most require code changes to get integrated.
+        
+    2. Dont support DBs like MySQL, Postgres, Redis, etc.
+        
+    3. The call never went out of the applications and so stubbed out at the client interface level.
+        
+2.  **Pact**:
+    
+    1. To use Pact, I need to first integrate the SDK on frontend to record the expected contracts.
+        
+    2. Deploy a broker that tracks these recorded contract recordings across environment deployments.
+        
+    3. Then run those tests on the backend, which may fail because I need to also ensure details like Auth are handled - which can again require lots of work to get it to work reliably.
+        
+    4. After all this plumbing and changing my code - The benefit is contract testing. My goal was to achieve more than just contracts - test behaviour.
+        
+3. **Wiremock**:
+    
+    1. Again no DBs.
+        
+    2. Correlating incoming calls to outgoing calls is left to the user.
+        
+    3. If I want to record/replay the calls, intercepting or directing calls is also left to the user. I wanted something which can achieve this transparently without application awareness and code changes.
+        
+4. \[Edit\] **Mountebank** - This one is new to me, somehow didn’t pop in my initial research. Got to know from this [reddit-comment](https://www.reddit.com/r/QualityAssurance/comments/1d0ju67/comment/l5ovs8w/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button). Seems to be similar to wire mock though:
+    
+    1. Again no DBs, although there seems to be some provisions to add custom protocols.
+        
+    2. Transparent record and replay not possible. This problem becomes exponentially harder when trying to do for DBs.
+        
+    3. Incoming and outgoing correlation is left to the user.
+        
+
+Since we wanted to record and replay everything (DB, internal/external APIs) at the wire level without code changes - we started writing a different implementation. From these experiences, [**Keploy open source**](https://github.com/keploy/keploy) project was born. Idea was to capture API requests and database responses during normal operation and creates test cases that can be replayed in any environment including CI/CD.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1716659237074/5f78acc3-2420-48e5-acfb-74ee6ccb9e3d.png align="center")
 
@@ -98,7 +135,7 @@ From these experiences, <mark>Keploy open source</mark> project was born. Idea w
 
 We continue to refine Keploy, aiming to reduce the maintenance burden and increase its adaptability to changes in the application. Our goal is to make API testing as seamless and efficient as possible.
 
-In my next blog I'll be writing about our journey of further challenges we faced with the SDK we built to record and replay APIs along with stubs and then moving on to the [<mark> eBPF approach</mark>](https://keploy.io/docs/keploy-explained/how-keploy-works/).
+In my next blog I'll be writing about our journey of further challenges we faced with the SDK we built to record and replay APIs along with stubs and then moving on to the [<mark>eBPF approach</mark>](https://keploy.io/docs/keploy-explained/how-keploy-works/).
 
 ### **Invitation to Collaborate**
 
