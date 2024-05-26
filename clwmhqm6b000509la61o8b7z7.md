@@ -1,10 +1,17 @@
 ---
 title: "Why Traditional API Testing Fails? Comparing Shadow, Production, Replay Techniques"
+seoTitle: "Why Traditional API Testing Fails? Shadow, Prod Replay Tests"
+seoDescription: "We had 15-day sprints including mandatory unit and API testing.
+
+Strict Timelines (2 weeks)
+
+80% unit test and API test mandate"
 datePublished: Sat May 25 2024 19:15:31 GMT+0000 (Coordinated Universal Time)
 cuid: clwmhqm6b000509la61o8b7z7
 slug: why-traditional-api-testing-fails-comparing-shadow-production-replay-techniques
 canonical: https://keploy.io/blog/technology/why-traditional-api-testing-fails-comparing-shadow-production-replay-techniques
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1716663017299/3dfc78aa-f04a-4eab-8d69-95381390eed5.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1716702415685/746e29c7-e434-42ce-9889-03cbf6af8e09.png
 tags: apis, software-engineering, software-testing, api-testing, api-testing-tools, ai-tools
 
 ---
