@@ -107,7 +107,7 @@ We did explore a combination of open-source tools built to make record-replay te
         
     3. The call never went out of the applications and so stubbed out at the client interface level.
         
-2.  **Pact**:
+2. **Pact**:
     
     1. To use Pact, I need to first integrate the SDK on frontend to record the expected contracts.
         
@@ -140,9 +140,36 @@ Since we wanted to record and replay everything (DB, internal/external APIs) at 
 
 ### **Continuous Improvement**
 
-We continue to refine Keploy, aiming to reduce the maintenance burden and increase its adaptability to changes in the application. Our goal is to make API testing as seamless and efficient as possible.
+We continue to refine [**Keploy**](http://keploy.io), aiming to reduce the maintenance burden and increase its adaptability to changes in the application. Our goal is to make API testing as seamless and efficient as possible. One of the hidden advantage with this approach was to identify **performance issues.** Shadow testing has uncovered hard-to-detect performance issues, such as excessive network calls. For example, we did have usecases where we uncovered some very hard to performance issues. Eg: Recently one of users recorded the application locally via keploy and saw there were 3000+ Redis mocks for single request to the API. After deeper inspection it was discovered that there was aggregation logic in the application which fetches 3000 entries in separate network calls from the Redis server. This problem is very hard to find locally, because simple lookups are very fast in Redis, there is also no latency locally and Redis also does [pipelining](https://redis.io/docs/latest/develop/use/pipelining/). After identifying this, the user converted this to a single batch call. I'm not claiming this to be a performance monitor, but its been very useful to see all the network requests data that my application does to databases and other services to understand what data exchanges are actually happening and also how many :)
 
-In my next blog I'll be writing about our journey of further challenges we faced with the SDK we built to record and replay APIs along with stubs and then moving on to the [<mark>eBPF approach</mark>](https://keploy.io/docs/keploy-explained/how-keploy-works/).
+### **Limitations of Testing in Production**
+
+Since our **use case** was to mainly use these as **regression tests** that are initially validated manually, and inform me about changes in application behavior and force me to normalize them if they are expected.
+
+1. **Adopting production:** it might take some time to gain confidence to record from production, but recording API calls locally to create test and stubs also solved the purpose upto good extent. Infact! running these tests locally went quite well because the tests didn't require any infra spin-up and ran very fast (eg: 1000 test in ~1 min for a medium size app ).
+    
+2. **Effort Required to Develop Parsers for Mocking/Stubbing Out Dependencies:** was high. However, it was clear that there can be high confidence on the mocks, if:
+    
+    1. Not done at any library interface level but at the wire level.
+        
+    2. Transparent to the application and without any config/behiviour change to the application.
+        
+    3. Created from recordings of the real Dependency like DBs or other services. I have seen issues with mocks that are manually created and so may not be "realisitic".
+        
+    4. Update-able easily when the mocked system changes.
+        
+    5. Tested for flakiness
+        
+3. **Over reliance:** Developers might become overly reliant on shadow tests to detect regressions. This can lead to issues if the system fails to catch some regressions, requiring a recalibration of expectations. **Integration with Code Coverage Libraries** to minimize over-reliance has been explored, providing transparency about covered branches in addition to lines of code. Future integration with mutation coverage is also considered.
+    
+4. **Data Privacy:** Since shadow testing starts during development, identifying keys related to personally identifiable information (PIi) is crucial. These filters need to propagate to production to maintain privacy
+    
+5. **The Oracle Problem:** where determining the correctness of test results is challenging. Can be partially solved by finding duplicate test cases based on branch/line coverage. While it might filter some legitimate use-cases, it saves the users from reviewing 1000s of mostly redundant tests.
+    
+6. **Handling Test Noise:** Strategies to handle noise include running tests multiple times to identify inconsistent fields and using techniques like time freezing to prevent session token expiration. [https://keploy.io/docs/keploy-cloud/time-freezing/](https://keploy.io/docs/keploy-cloud/time-freezing/)
+    
+
+In my next blog I'll be writing about our journey of further challenges we faced with the SDK we built to record and replay APIs along with stubs and then moving on to the [<mark>eBPF approach</mark>](https://keploy.io/docs/keploy-explained/how-keploy-works/). The core requirement I had was, how can I iterate quickly with my applications when I make small code changes without having to invest in writing tests scripts and maintaining test data or env. Would love to hear more thoughts :)
 
 ### **Invitation to Collaborate**
 
