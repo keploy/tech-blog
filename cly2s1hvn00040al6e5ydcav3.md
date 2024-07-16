@@ -3,6 +3,7 @@ title: "My Testing Journey with Jasmine and Mocha"
 datePublished: Mon Jul 01 2024 09:27:56 GMT+0000 (Coordinated Universal Time)
 cuid: cly2s1hvn00040al6e5ydcav3
 slug: my-testing-journey-with-jasmine-and-mocha
+canonical: https://keploy.io/blog/technology/my-testing-journey-with-jasmine-and-mocha
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1711952341080/ca9b4154-7a2e-48f9-bbef-0bf13124ac0a.png
 
 ---
