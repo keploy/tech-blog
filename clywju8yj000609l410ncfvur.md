@@ -3,6 +3,7 @@ title: "How to Use covdata for Better Code Coverage in Go"
 datePublished: Mon Jul 22 2024 05:31:27 GMT+0000 (Coordinated Universal Time)
 cuid: clywju8yj000609l410ncfvur
 slug: how-to-use-covdata-for-better-code-coverage-in-go
+canonical: https://keploy.io/blog/technology/how-to-use-covdata-for-better-code-coverage-in-go
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1721626483702/a7b4140d-9abf-431c-a247-84b58da3d9d2.jpeg
 tags: golang, code-coverage, integration-test, covdata
 
