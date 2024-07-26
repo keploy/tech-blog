@@ -1,5 +1,6 @@
 ---
-title: "How to Use covdata for Better Code Coverage in Go"
+title: "How to Use covdata for Better Go Code Coverage"
+seoTitle: "Go Code Coverage with Covdata"
 datePublished: Mon Jul 22 2024 05:31:27 GMT+0000 (Coordinated Universal Time)
 cuid: clywju8yj000609l410ncfvur
 slug: how-to-use-covdata-for-better-code-coverage-in-go
@@ -11,9 +12,9 @@ tags: golang, code-coverage, integration-test, covdata
 
 When you run your Go programs or integration tests, numbers of raw coverage files are typically generated and dumped into a directory specified by the `GOCOVERDIR` environment variable. These files contain valuable data about which parts of your code were executed during tests, offering a glimpse into your code's effectiveness and robustness. However, sifting through these raw files to extract actionable insights can be daunting and unclear for many developers.
 
-This is where `covdata` comes into play—a powerful tool designed specifically to address the complexities of analysing raw coverage files in Go. `covdata` simplifies the process by providing a suite of subcommands, each tailored to transform these intricate data sets into more digestible formats. Whether you're looking to generate a straightforward text-formatted output that summaries coverage metrics or an elaborate HTML file that provides a detailed, line-by-line view of code coverage, `covdata` is equipped to meet your needs.
+This is where `covdata` comes into play—a powerful tool designed specifically to address the complexities of analysing raw coverage files in Go. `covdata` simplifies the process by providing a suite of subcommands, each tailored to transform these intricate data sets into more digestible formats. Whether you're looking to generate a straightforward text-formatted output that summaries coverage metrics or an elaborate HTML file that provides a detailed, line-by-line view of go coverage, `covdata` is equipped to meet your needs.
 
-In this blog post, we'll explore the various capabilities of `covdata`, starting with its basic setup and moving through to its more advanced features. We'll discuss each subcommand in detail, demonstrating how they can be used to derive meaningful conclusions from your coverage data.
+In this blog post, we'll explore the various capabilities of `covdata`, starting with its basic setup and moving through to its more advanced features. We'll discuss each subcommand in detail, demonstrating how they can be used to derive meaningful conclusions from your go coverage data.
 
 ## Delving into the capabilities of covdata
 
@@ -31,12 +32,12 @@ coverage-reports
 
 To follow along, download the coverage-reports directory from [https://github.com/AkashKumar7902/covdata-demostration](https://github.com/AkashKumar7902/covdata-demostration)
 
-1. ### go tool covdata textfmt
+1. ### Raw coverage data to text in go
     
 
 The `textfmt` subcommand is designed to convert raw coverage data files into a machine-readable, text-based and traditional coverage format. The output file generated can be used to generate analytics in CI/CD pipelines.
 
-Lets run this on coverage-reports/test-set-0:
+***Lets run this on coverage-reports/test-set-0:***
 
 ```bash
 go tool covdata textfmt -i="coverage-reports/test-set-0" -o="coverage-reports/test-set-0/test-set-0.txt"
@@ -53,25 +54,29 @@ test-app-url-shortener/main.go:70.76,72.3 1 0
 test-app-url-shortener/main.go:73.2,73.31 1 1
 ```
 
-2. ### go tool covdata percent
+2. ### Go Coverage Percentage
     
 
-The `percent` subcommand calculates the total percentage of lines covered. This command simplifies understanding test effectiveness by providing a quick numerical summary of coverage.
+The `percent` subcommand calculates the total percentage of lines covered. This command simplifies understanding test effectiveness by providing a quick numerical summary of go coverage.
 
-Lets run this on coverage-reports/test-set-1:
+***Lets run this on coverage-reports/test-set-1:***
 
 ```bash
 go tool covdata percent -i=coverage-reports/test-set-1
 ```
 
-You would see an output like:  
-`test-app-url-shortener coverage: 38.6% of statements`
+You would see an output like:
 
-### go tool covdata func
+```bash
+test-app-url-shortener coverage: 38.6% of statements
+```
+
+3. ### Func Command
+    
 
 The `func` subcommand outputs detailed coverage profile information for each function within your Go codebase. This feature enables developers to assess the test coverage at a function-level granularity, providing insights into which parts of the application are well-tested and which may need more attention.
 
-Running this on coverage-reports/test-set-1:
+***Running this on coverage-reports/test-set-1:***
 
 ```bash
 go tool covdata func -i=coverage-reports/test-set-1
@@ -94,11 +99,12 @@ test-app-url-shortener/main.go:23:      main                    90.3%
 total                                   (statements)            38.6%
 ```
 
-### go tool covdata merge
+4. ### Merge Go Coverage Files
+    
 
 The `merge` subcommand is designed to consolidate multiple coverage data files into a single, comprehensive coverage report. This functionality is crucial for projects where tests are run in parallel or across different environments, as it allows for an aggregated view of overall code coverage, ensuring a complete and unified analysis of test effectiveness.
 
-Let's merge data files in test-set-0 and test-set-1:
+***Let's merge data files in test-set-0 and test-set-1:***
 
 ```bash
 mkdir coverage-reports/merged-coverage
@@ -113,14 +119,18 @@ To see the merged-coverage percentage, we will run `percent` subcommand with mer
  go tool covdata percent -i=coverage-reports/merged-coverage
 ```
 
-It would generate an output like:  
-`test-app-url-shortener coverage: 80.7% of statements`
+It would generate an output like:
 
-### go tool covdata subtract
+```bash
+test-app-url-shortener coverage: 80.7% of statements
+```
+
+5. ### Subtract Coverage
+    
 
 The `subtract` subcommand is designed to compare and subtract coverage data from two different sets of coverage files. This feature is particularly useful for identifying changes in code coverage between different test runs or configurations, enabling developers to pinpoint exactly which parts of the code have experienced decreases in test coverage. This helps focus improvement efforts on areas where coverage has regressed.
 
-Running this on merged-coverage and test-set-0:
+***Running this on merged-coverage and test-set-0:***
 
 ```bash
 mkdir coverage-reports/sub-coverage
@@ -133,14 +143,18 @@ To see the coverage percentage of profile generated by `subtract` subcommand, Ru
 go tool covdata percent -i=coverage-reports/sub-coverage
 ```
 
-An output like this would be generated:  
-`test-app-url-shortener coverage: 42.0% of statements`
+An output like this would be generated:
 
-### go tool covdata intersect
+```bash
+test-app-url-shortener coverage: 42.0% of statements
+```
+
+6. ### Intersect Coverage
+    
 
 The `intersect` subcommand is used to identify and generate a coverage report based on the common coverage data found in multiple coverage files. This command is particularly valuable in scenarios where you want to determine the overlap in test coverage across different test suites or conditions, ensuring that key code paths are consistently tested under varying environments or setups.
 
-Let's run this on test-set-0 and test-set-1 directories:
+***Let's run this on test-set-0 and test-set-1 directories:***
 
 ```bash
 mkdir coverage-reports/intersect-coverage
@@ -154,8 +168,11 @@ Run `percent` subcomand to see the coverage percentage of profile generated by `
 go tool covdata percent -i=coverage-reports/intersect-coverage
 ```
 
-It would generate an output like:  
-`test-app-url-shortener coverage: 36.4% of statements`
+It would generate an output like:
+
+```bash
+test-app-url-shortener coverage: 36.4% of statements
+```
 
 ## Conclusion
 
@@ -183,11 +200,11 @@ Yes, `covdata` can be easily integrated into CI/CD pipelines. The output files g
 
 ### Is `covdata` suitable for large projects with multiple test environments?
 
-Yes, `covdata` is suitable for large projects as it provides subcommands like `merge` to consolidate coverage data from multiple environments and `intersect` to identify common coverage areas across different test suites.
+Yes, `covdata` is suitable for large projects as it provides subcommands like `merge` to consolidate go coverage data from multiple environments and `intersect` to identify common coverage areas across different test suites.
 
 ### How can I get started with `covdata`?
 
-You can get started with `covdata` by installing it and running your tests with the `GOCOVERDIR` environment variable set. Use the subcommands provided by `covdata` to analyze the generated coverage files and gain insights into your code coverage.
+You can get started with `covdata` by installing it and running your tests with the `GOCOVERDIR` environment variable set. Use the subcommands provided by `covdata` to analyze the generated coverage files and gain insights into your go coverage files.
 
 ## References
 
