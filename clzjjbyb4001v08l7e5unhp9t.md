@@ -1,10 +1,11 @@
 ---
 title: "BitBucket Self-Hosting : Running ebpf/Privileged programs"
 seoTitle: "Overcoming Bitbucket CI/CD Limitations with Docker-in-Docker and Linux"
-seoDescription: "Explore how to overcome Bitbucket CI/CD pipeline limitations with Docker-in-Docker and Linux shell scripts. Learn to handle root privileges, mount volumes, "
+seoDescription: "Explore how to overcome Bitbucket CI/CD pipeline limitations with Docker-in-Docker and Linux shell scripts. Learn to handle root privileges, mount volumes,"
 datePublished: Wed Aug 07 2024 07:35:55 GMT+0000 (Coordinated Universal Time)
 cuid: clzjjbyb4001v08l7e5unhp9t
 slug: bitbucket-self-hosting-running-ebpfprivileged-programs
+canonical: https://keploy.io/blog/technology/bitbucket-self-hosting-running-ebpfprivileged-programs
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1721114797783/56e833e5-9b1d-49f1-ba16-c30d09225bd8.png
 tags: linux, docker, self-hosted, bitbucket, ebpf, bitbucket-pipelines, bitbucket-self-hosted-runner
 
