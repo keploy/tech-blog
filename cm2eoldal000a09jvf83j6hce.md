@@ -5,6 +5,7 @@ seoDescription: "If you're tired of writing endless lines of repetitive code in 
 datePublished: Fri Oct 18 2024 12:03:29 GMT+0000 (Coordinated Universal Time)
 cuid: cm2eoldal000a09jvf83j6hce
 slug: migration-guide-from-restassured-to-keploy
+canonical: https://keploy.io/blog/technology/migration-guide-from-restassured-to-keploy
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729252643948/c69ab866-4507-4fcd-ac33-c1d8fcfee0cd.png
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1729252680820/f34feb4d-e74b-4135-8e68-03b2f87464b1.png
 tags: rest, keploy, rest-assured
