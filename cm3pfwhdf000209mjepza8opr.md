@@ -5,6 +5,7 @@ seoDescription: "Secure your database communications with SSL in Docker containe
 datePublished: Wed Nov 20 2024 05:25:21 GMT+0000 (Coordinated Universal Time)
 cuid: cm3pfwhdf000209mjepza8opr
 slug: docker-containers-enabling-ssl-for-secure-databases
+canonical: https://keploy.io/blog/technology/secure-your-database-communications-with-ssl-in-docker-containers-learn-to-set-up-ssl-for-mongodb-and-postgresql-efficiently
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1732080046482/ccc426d4-2a39-4a59-a7dc-6883b2ddbe3b.webp
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1732080258010/b12673ec-3d7a-46bf-8780-2c70e0d64e59.webp
 tags: ssl, postgresql, docker, mongodb, databases, tls
