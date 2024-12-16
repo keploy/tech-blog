@@ -5,6 +5,7 @@ seoDescription: "Test Kubernetes custom controllers with tools like Keploy to si
 datePublished: Mon Dec 16 2024 05:39:44 GMT+0000 (Coordinated Universal Time)
 cuid: cm4qlv4vz000008mn9uepgd1z
 slug: how-to-test-traffic-with-a-custom-kubernetes-controller
+canonical: https://keploy.io/blog/technology/how-to-test-traffic-with-a-custom-kubernetes-controller
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1714904706812/364fac07-beac-40b1-8570-4b9d1a6a2464.png
 tags: kubernetes, testing, keploy, traffic-management
 
