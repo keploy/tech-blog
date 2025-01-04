@@ -5,6 +5,7 @@ seoDescription: "Learn about effective connection handling in TCP servers using 
 datePublished: Sat Jan 04 2025 05:51:51 GMT+0000 (Coordinated Universal Time)
 cuid: cm5hrnwce00000al80es53gi2
 slug: efficient-tcp-server-connection-management
+canonical: https://keploy.io/blog/technology/efficient-tcp-server-connection-management
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1712028083666/4f539748-49ad-4457-873c-c00724b5d084.webp
 tags: go, concurrency, tcp, goroutines
 
