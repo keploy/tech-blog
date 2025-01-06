@@ -57,6 +57,17 @@ Keploy is an open-source tool designed to automate API testing by capturing API 
 
 We will run a simple employee-manager application in Java with Postgres as a database for this guide.
 
+### Prerequisite
+
+Setup the application locally and navigate to the root folder: -
+
+```bash
+git clone https://github.com/keploy/samples-java.git
+
+## Checkout the branch with updated pom.xml and then to our application folder
+git checkout restassured && cd samples-java/employee-manager
+```
+
 ### Step 1: Assess Your Current Test Suite
 
 Before migrating, conduct a comprehensive assessment of your existing RestAssured test suite:
