@@ -5,6 +5,7 @@ seoDescription: "Use NYC, Istanbul's CLI, to improve JavaScript/TypeScript test 
 datePublished: Wed Jan 15 2025 06:00:58 GMT+0000 (Coordinated Universal Time)
 cuid: cm5xhtzsu000l09lbcaaf7ojp
 slug: mastering-nyc-enhance-javascript-typescript-test-coverage
+canonical: https://keploy.io/blog/technology/mastering-nyc-enhance-javascript-typescript-test-coverage
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1736920848553/a0b404cc-0c8b-49bf-a819-07f6c9aecc7c.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1736920843822/ef7c8d21-38ba-42ff-a4dd-65c06afcbe40.jpeg
 tags: javascript, testing, typescript, node, keploy, nyc
