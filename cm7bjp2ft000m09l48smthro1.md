@@ -5,6 +5,7 @@ seoDescription: "Learn how to streamline Kubernetes deployments and master GitOp
 datePublished: Wed Feb 19 2025 06:41:36 GMT+0000 (Coordinated Universal Time)
 cuid: cm7bjp2ft000m09l48smthro1
 slug: streamlining-deployments-how-to-master-gitops-with-fluxcd
+canonical: https://keploy.io/blog/community/streamlining-deployments-how-to-master-gitops-with-fluxcd
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1729850439336/1b9c979e-bdb1-4c37-88ba-3c6b0b441c38.png
 
 ---
