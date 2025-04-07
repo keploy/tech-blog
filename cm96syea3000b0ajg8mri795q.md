@@ -5,6 +5,7 @@ seoDescription: "Discover the complete guide to connecting your hosted UI websit
 datePublished: Mon Apr 07 2025 08:21:22 GMT+0000 (Coordinated Universal Time)
 cuid: cm96syea3000b0ajg8mri795q
 slug: connecting-a-hosted-ui-website-to-an-aws-ec2-instance-a-step-by-step-guide
+canonical: https://keploy.io/blog/community/connecting-a-hosted-ui-website-to-an-aws-ec2-instance
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1730090223184/e8d88af3-f29e-45f9-bc90-266d659a6171.webp
 tags: ec2, aws, https, web-development, beginners, web-server, keploy, ssltls
 
