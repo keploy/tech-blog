@@ -5,6 +5,7 @@ seoDescription: "Learn how protocol parsing transforms packets into structured d
 datePublished: Thu Apr 10 2025 03:02:32 GMT+0000 (Coordinated Universal Time)
 cuid: cm9arvxuk000v09l5gqijcrb6
 slug: a-practical-guide-to-protocol-parsing-from-packets-to-structured-data
+canonical: https://keploy.io/blog/technology/protocol-parsing-guide
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1725827073761/5de7a584-0a8b-4063-9aae-71b82f068796.webp
 tags: postgresql, http, mongodb, tcp, protocols, wireshark
 
