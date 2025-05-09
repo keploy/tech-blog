@@ -5,6 +5,7 @@ seoDescription: "Learn how to capture multiple requests on the same connection u
 datePublished: Fri May 09 2025 05:16:27 GMT+0000 (Coordinated Universal Time)
 cuid: cmagcfuve000l09l5857r02jh
 slug: tracking-multiple-requests-over-a-single-connection-with-ebpf
+canonical: https://keploy.io/blog/community/tracking-multiple-requests-over-a-single-connection-with-ebpf
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1714205765489/dd10c319-c3aa-4fea-afab-7362e995f42d.png
 tags: c, linux, go, http, ebpf
 
