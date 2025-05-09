@@ -1,10 +1,10 @@
 ---
-title: "Capturing Multiple Requests on the Same Connection with eBPF"
+title: "Tracking Multiple Requests Over a Single Connection with eBPF"
 seoTitle: "How to Capture Multiple Requests on the Same Connection Using eBPF"
 seoDescription: "Learn how to capture multiple requests on the same connection using eBPF for better observability and performance insights."
 datePublished: Fri May 09 2025 05:16:27 GMT+0000 (Coordinated Universal Time)
 cuid: cmagcfuve000l09l5857r02jh
-slug: capturing-multiple-requests-on-the-same-connection-with-ebpf-1
+slug: tracking-multiple-requests-over-a-single-connection-with-ebpf
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1714205765489/dd10c319-c3aa-4fea-afab-7362e995f42d.png
 tags: c, linux, go, http, ebpf
 
