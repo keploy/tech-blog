@@ -5,6 +5,7 @@ seoDescription: "Learn how to build a powerful command-line interface (CLI) tool
 datePublished: Wed May 28 2025 21:30:43 GMT+0000 (Coordinated Universal Time)
 cuid: cmb8glyk9000e09la6yls31nf
 slug: building-a-cli-tool-in-go-with-cobra-and-viper
+canonical: https://keploy.io/blog/technology/building-a-cli-tool-in-go-with-cobra-and-viper
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1748466686712/8dde2282-b05d-47c3-8379-30bc5d1f7a52.jpeg
 tags: go, tools, cli, cobra
 
