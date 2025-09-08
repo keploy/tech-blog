@@ -314,32 +314,24 @@ The **AI Glasses Model** is my evolution of the traditional Testing Pyramid, Tro
 
 ![New Testing Pyramid: AI Glass Model & Test Automation](https://cdn.hashnode.com/res/hashnode/image/upload/v1757071699592/56a81859-7a0d-42cb-b2f9-dad7636fb742.png align="center")
 
-The model uses a **horizontal honeycomb** as the “face,” split into three core testing layers:
+A **horizontal honeycomb “face”** with three layers — **Unit**, **Integration**, **E2E** — and **two “ears”** for **Static Checks** (left of SDLC) and **External Tests** (right of SDLC).
 
-* **Unit** (shifting as left possible in the SDLC)
-    
-* **Integration** (keep majorly left to center in the SDLC)
-    
-* **End-to-End (E2E)** (testing the right-most in the left-most of the SDLC)
-    
+Through it runs an **hourglass-shaped AI layer** that:
 
-Running down the middle is an **hourglass-shaped AI layer** — the “glasses” — that visually connects the layers and shows where AI contributes most:
-
-* **100% coverage for Static Checks** (linting, type safety, security scans)
+* **Automates 100% of Static Checks** — linting, type safety, security scans
     
-* **Major coverage in Unit and E2E testing** — AI can generate and maintain a large portion of these tests, speeding up delivery without increasing maintenance cost.
+* **Covers most Unit & E2E tests** via AI-generated, self-healing automation. Today,
     
-* **Partial coverage in Integration testing** — AI can assist in setup and test generation here, but human input remains critical due to service complexity and context.
+    * **Unit**: 70–80% good coverage achievable with AI agents
+        
+    * **API/E2E**: 80–90% schema coverage possible with test-agents like Keploy
+        
+* **Partially covers Integration tests** — the most complex & context-heavy layer. AI agents are less deterministic here, but Keploy solves this by **observing real traffic** and deterministically replaying scenarios, including stress & fuzz testing for edge cases.
     
 
-On either side of the “face” are the **ears**:
+**It’s not replacing humans** — it’s redefining *where* they spend effort.
 
-* **Static Checks (Left of SDLC)** — prevent defects early with automated quality gates before code even hits testing.
-    
-* **External Tests (Right of SDLC)** — validate the system against real-world, uncontrolled environments and dependencies post-deployment.
-    
-
-This structure makes it easy to see that AI is not replacing every testing activity — instead, it’s strategically **covering the most automatable layers** and amplifying human effort where creativity and context are essential.
+AI handles repetitive, automatable layers; humans focus on high-context, high-risk, high-value testing that can’t be automated. This structure makes it easy to see that AI is not replacing every testing activity — instead, it’s strategically **covering the most automatable layers** and amplifying human effort where creativity and context are essential.
 
 In practice, teams using this model can:
 
@@ -356,7 +348,7 @@ The **AI Glasses Model** doesn’t replace the Pyramid or Trophy — it “sits 
 
 **The AI Era – Automation is at Scale**
 
-Now, code changes happen faster thanks to AI-assisted development. That speed widens the gap between “what we can test manually” and “what we must guarantee before shipping.” Teams are leaning heavily on integration-first automation because:
+Now, code changes happen faster, thanks to AI-assisted development. That speed widens the gap between “what we can test manually” and “what we must guarantee before shipping.” Teams are leaning heavily on integration-first automation because:
 
 1. It supports [**fearless refactoring**](https://keploy.io/blog/community/what-is-code-refactoring)—tests survive internal code changes.
     
