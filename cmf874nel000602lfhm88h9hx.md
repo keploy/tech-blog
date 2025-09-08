@@ -325,9 +325,9 @@ Through it runs an **hourglass-shaped AI layer** that:
     
     * **Unit**: 70–80% good coverage achievable with AI agents
         
-    * **API/E2E**: 80–90% schema coverage possible with test-agents like Keploy
+    * **API/E2E**: 80–90% schema coverage possible with test-agents like [**Keploy**](https://github.com/keploy/keploy)
         
-* **Partially covers Integration tests** — the most complex & context-heavy layer. AI agents are less deterministic here, but Keploy solves this by **observing real traffic** and deterministically replaying scenarios, including stress & fuzz testing for edge cases.
+* **Partially covers Integration tests** — the most complex & context-heavy layer. AI agents are less deterministic here, but [**Keploy.i**](https://keploy.io/)**o** solves this by **observing real traffic** and deterministically replaying scenarios, including stress & fuzz testing for edge cases.
     
 
 **It’s not replacing humans** — it’s redefining *where* they spend effort.
